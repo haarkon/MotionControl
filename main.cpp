@@ -28,7 +28,7 @@ int main()
     while (true) {
         ledR = !ledR;
     
-        robot.setSpeed(0.5, 0.5);
+        robot.setSpeed(0.5f, 0.5f);
 
         do {
             robot.getPosition (&X, &Y, &T);
@@ -40,7 +40,7 @@ int main()
             robot.getSpeed (&lSpeed, &rSpeed);
         } while ((lSpeed > 0) && (rSpeed > 0));
 
-        robot.setSpeed(-0.5, -0.5);
+        robot.setSpeed(-0.5f, -0.5f);
 
         do {
             robot.getPosition (&X, &Y, &T);
