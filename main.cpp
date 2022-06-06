@@ -40,7 +40,7 @@ int main()
             robot.getSpeed (&lSpeed, &rSpeed);
         } while ((lSpeed > 0) && (rSpeed > 0));
 
-        robot.setSpeed(0.5, -0.5);
+        robot.setSpeed(-0.5, -0.5);
 
         do {
             robot.getPosition (&X, &Y, &T);
